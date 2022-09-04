@@ -1,6 +1,6 @@
 package homework.module_8.shapes;
 
-public class Circle implements Shape {
+public class Circle extends Shape {
     private double radius;
     public static final String CIRCLE_NAME = "Circle";
 

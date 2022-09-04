@@ -1,6 +1,6 @@
 package homework.module_8.shapes;
 
-public class Line implements Shape {
+public class Line extends Shape {
     private double length;
     public static final String LINE_NAME = "Line";
 

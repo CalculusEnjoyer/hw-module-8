@@ -4,17 +4,17 @@ import homework.module_8.shapes.Circle;
 import homework.module_8.shapes.Hexagon;
 import homework.module_8.shapes.Shape;
 import homework.module_8.shapes.Square;
-import homework.module_8.utility.Displayer;
+import static homework.module_8.utilities.Displayer.display;
 
 public class Main {
     public static void main(String[] args) {
         Shape testShape = new Circle();
-        Displayer.display(testShape);
+        display(testShape);
 
         testShape = new Hexagon();
-        Displayer.display(testShape);
+        display(testShape);
 
         testShape = new Square();
-        Displayer.display(testShape);
+        display(testShape);
     }
 }

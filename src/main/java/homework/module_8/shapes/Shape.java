@@ -1,5 +1,5 @@
 package homework.module_8.shapes;
 
-public interface Shape{
-    void display();
-}
+import homework.module_8.interfaces.Displayable;
+
+public abstract class Shape implements Displayable {}
