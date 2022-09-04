@@ -1,17 +1,12 @@
-package homework.module_8;
+package homework.module_8.utility;
 
-import homework.module_8.shape_interfaces.Displayable;
+import homework.module_8.shapes.Shape;
 
 public final class Displayer {
-
-    private Displayer(){
+    private Displayer() {
     }
 
-    public static void display(Object o) {
-        if (o instanceof Displayable) {
-            ((Displayable) o).display();
-        } else {
-            throw new UnsupportedOperationException();
-        }
+    public static void display(Shape shape) {
+        shape.display();
     }
 }

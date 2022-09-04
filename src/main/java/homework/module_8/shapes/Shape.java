@@ -1,2 +1,5 @@
-package homework.module_8.shapes;public interface Shape {
+package homework.module_8.shapes;
+
+public interface Shape{
+    void display();
 }
