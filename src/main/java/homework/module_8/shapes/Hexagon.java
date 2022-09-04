@@ -8,6 +8,6 @@ public class Hexagon extends Shape {
 
     @Override
     public void display() {
-        System.out.println("This is "+HEXAGON_NAME);
+        System.out.println("This is " + HEXAGON_NAME);
     }
 }
