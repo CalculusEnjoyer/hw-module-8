@@ -4,11 +4,11 @@ public class Line extends Shape {
     private double length;
     private static final String LINE_NAME = "Line";
 
-    public Line(){
+    public Line() {
         this(0);
     }
 
-    public Line(double length){
+    public Line(double length) {
         if (length >= 0) {
             this.length = length;
         } else {

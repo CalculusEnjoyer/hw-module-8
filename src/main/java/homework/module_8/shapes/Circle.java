@@ -4,11 +4,11 @@ public class Circle extends Shape {
     private double radius;
     private static final String CIRCLE_NAME = "Circle";
 
-    public Circle(){
+    public Circle() {
         this(0);
     }
 
-    public Circle(double radius){
+    public Circle(double radius) {
         if (radius >= 0) {
             this.radius = radius;
         } else {

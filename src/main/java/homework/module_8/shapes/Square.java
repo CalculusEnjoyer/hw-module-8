@@ -4,11 +4,11 @@ public class Square extends Shape {
     private double sideLength;
     private static final String SQUARE_NAME = "Square";
 
-    public Square(){
+    public Square() {
         this(0);
     }
 
-    public Square(double sideLength){
+    public Square(double sideLength) {
         if (sideLength >= 0) {
             this.sideLength = sideLength;
         } else {
