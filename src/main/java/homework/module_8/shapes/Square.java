@@ -2,17 +2,15 @@ package homework.module_8.shapes;
 
 public class Square extends Shape {
     private double sideLength;
-    public static final String SQUARE_NAME = "Square";
+    private static final String SQUARE_NAME = "Square";
 
-    public Square() {
+    public static String getSquareName() {
+        return SQUARE_NAME;
     }
 
-    public Square(double sideLength) {
-        if (sideLength >= 0) {
-            this.sideLength = sideLength;
-        } else {
-            throw new IllegalArgumentException("side length can not be negative");
-        }
+    @Override
+    public String determineShapeType() {
+        return getSquareName();
     }
 
     public double getSideLength() {
@@ -25,10 +23,5 @@ public class Square extends Shape {
         } else {
             throw new IllegalArgumentException("side length can not be negative");
         }
-    }
-
-    @Override
-    public void display() {
-        System.out.println("This is " + SQUARE_NAME);
     }
 }

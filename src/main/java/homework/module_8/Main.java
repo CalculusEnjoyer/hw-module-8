@@ -5,7 +5,7 @@ import homework.module_8.shapes.Hexagon;
 import homework.module_8.shapes.Shape;
 import homework.module_8.shapes.Square;
 
-import static homework.module_8.utilities.Displayer.display;
+import static homework.module_8.shapes.utility.Displayer.display;
 
 public class Main {
     public static void main(String[] args) {

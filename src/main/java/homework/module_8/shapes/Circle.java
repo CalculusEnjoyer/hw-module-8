@@ -2,13 +2,15 @@ package homework.module_8.shapes;
 
 public class Circle extends Shape {
     private double radius;
-    public static final String CIRCLE_NAME = "Circle";
+    private static final String CIRCLE_NAME = "Circle";
 
-    public Circle() {
+    public static String getCircleName() {
+        return CIRCLE_NAME;
     }
 
-    public Circle(double radius) {
-        this.radius = radius;
+    @Override
+    public String determineShapeType() {
+        return getCircleName();
     }
 
     public double getRadius() {
@@ -21,10 +23,5 @@ public class Circle extends Shape {
         } else {
             throw new IllegalArgumentException("radius can not be negative");
         }
-    }
-
-    @Override
-    public void display() {
-        System.out.println("This is " + CIRCLE_NAME);
     }
 }

@@ -2,9 +2,15 @@ package homework.module_8.shapes;
 
 public class Line extends Shape {
     private double length;
-    public static final String LINE_NAME = "Line";
+    private static final String LINE_NAME = "Line";
 
-    public Line() {
+    public static String getLineName() {
+        return LINE_NAME;
+    }
+
+    @Override
+    public String determineShapeType() {
+        return getLineName();
     }
 
     public Line(double length) {
@@ -25,10 +31,5 @@ public class Line extends Shape {
         } else {
             throw new IllegalArgumentException("length must be positive");
         }
-    }
-
-    @Override
-    public void display() {
-        System.out.println("This is " + LINE_NAME);
     }
 }
