@@ -13,14 +13,6 @@ public class Line extends Shape {
         return getLineName();
     }
 
-    public Line(double length) {
-        if (length >= 0) {
-            this.length = length;
-        } else {
-            throw new IllegalArgumentException("length must be positive");
-        }
-    }
-
     public double getLength() {
         return length;
     }
